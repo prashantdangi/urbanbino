@@ -8,7 +8,7 @@ interface ProductCardProps {
 
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const { id, name, price, originalPrice, discount, images, isNew } = product;
+  const { id, name, price, images, isNew } = product;
   
   const handleMouseEnter = () => {
     if (images.length > 1) {
@@ -40,12 +40,6 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             <Badge variant="new">NEW</Badge>
           </div>
         )}
-        
-        {discount && (
-          <div className="absolute top-3 right-3">
-            <Badge variant="sale">{discount}% OFF</Badge>
-          </div>
-        )}
       </div>
       
       <div>
@@ -54,10 +48,8 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         </h3>
         
         <div className="mt-1 flex items-center">
-          <span className="text-lg font-semibold mr-2">${price.toFixed(2)}</span>
-          {originalPrice && (
-            <span className="text-sm text-gray-500 line-through">${originalPrice.toFixed(2)}</span>
-          )}
+          <span className="text-lg font-semibold mr-2">₹{price}</span>
+          <span className="text-sm text-gray-500 line-through">₹999</span>
         </div>
       </div>
     </a>

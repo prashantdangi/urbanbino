@@ -71,7 +71,7 @@ const CartPage = () => {
                         </button>
                       </div>
                       <span className="font-semibold">
-                        ${(item.product.price * item.quantity).toFixed(2)}
+                        ₹{item.product.price * item.quantity}
                       </span>
                     </div>
                   </div>
@@ -82,7 +82,7 @@ const CartPage = () => {
             <div className="border-t pt-4">
               <div className="flex justify-between mb-4">
                 <span className="font-medium">Total</span>
-                <span className="font-semibold">${cartTotal.toFixed(2)}</span>
+                <span className="font-semibold">₹{cartTotal}</span>
               </div>
               <Button className="w-full">Checkout</Button>
             </div>

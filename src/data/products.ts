@@ -32,12 +32,10 @@ export const products: Product[] = [
   {
     id: '1',
     name: 'Classic Fit Oxford Shirt',
-    price: 49.99,
-    originalPrice: 69.99,
-    discount: 28,
+    price: 599,
     images: [
-      'https://images.pexels.com/photos/5698851/pexels-photo-5698851.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      'https://images.pexels.com/photos/5698847/pexels-photo-5698847.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+      '/photo11.jpg',
+      '/photo12.jpg'
     ],
     category: 'mens',
     tags: ['Formal', 'Classic', 'New Arrival'],
@@ -49,12 +47,10 @@ export const products: Product[] = [
   {
     id: '2',
     name: 'Slim Fit Chino Pants',
-    price: 59.99,
-    originalPrice: 79.99,
-    discount: 25,
+    price: 599,
     images: [
-      'https://images.pexels.com/photos/5698859/pexels-photo-5698859.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      'https://images.pexels.com/photos/5698858/pexels-photo-5698858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+      '/photo13.jpg',
+      '/photo14.jpg'
     ],
     category: 'mens',
     tags: ['Casual', 'Slim Fit', 'Best Seller'],
@@ -65,12 +61,10 @@ export const products: Product[] = [
   {
     id: '3',
     name: 'Premium Denim Jacket',
-    price: 89.99,
-    originalPrice: 119.99,
-    discount: 25,
+    price: 599,
     images: [
-      'https://images.pexels.com/photos/4210866/pexels-photo-4210866.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      'https://images.pexels.com/photos/4210863/pexels-photo-4210863.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+      '/photo 15.jpg',
+      '/photo16.jpg'
     ],
     category: 'mens',
     tags: ['Denim', 'Jacket', 'Premium'],
@@ -81,12 +75,10 @@ export const products: Product[] = [
   {
     id: '4',
     name: 'Casual Linen Shirt',
-    price: 45.99,
-    originalPrice: 59.99,
-    discount: 23,
+    price: 599,
     images: [
-      'https://images.pexels.com/photos/844867/pexels-photo-844867.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      'https://images.pexels.com/photos/1173651/pexels-photo-1173651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+      '/photo17.jpg',
+      '/photo18.jpg'
     ],
     category: 'mens',
     tags: ['Casual', 'Linen', 'Summer'],
@@ -97,12 +89,10 @@ export const products: Product[] = [
   {
     id: '5',
     name: 'Wool Blend Sweater',
-    price: 69.99,
-    originalPrice: 89.99,
-    discount: 22,
+    price: 599,
     images: [
-      'https://images.pexels.com/photos/5885840/pexels-photo-5885840.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      'https://images.pexels.com/photos/6311662/pexels-photo-6311662.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+      '/photo19.jpg',
+      '/photo20.jpg'
     ],
     category: 'mens',
     tags: ['Winter', 'Wool', 'Premium'],
@@ -113,12 +103,10 @@ export const products: Product[] = [
   {
     id: '6',
     name: 'Leather Derby Shoes',
-    price: 129.99,
-    originalPrice: 159.99,
-    discount: 19,
+    price: 599,
     images: [
-      'https://images.pexels.com/photos/7691086/pexels-photo-7691086.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      'https://images.pexels.com/photos/7691249/pexels-photo-7691249.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+      '/photo21.jpg',
+      '/photo22.jpg'
     ],
     category: 'mens',
     tags: ['Shoes', 'Leather', 'Formal'],
@@ -130,12 +118,10 @@ export const products: Product[] = [
   {
     id: '7',
     name: 'Floral Summer Dress',
-    price: 79.99,
-    originalPrice: 99.99,
-    discount: 20,
+    price: 599,
     images: [
-      'https://images.pexels.com/photos/5698851/pexels-photo-5698851.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      'https://images.pexels.com/photos/5698847/pexels-photo-5698847.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+      '/photo12.jpg',
+      '/photo13.jpg'
     ],
     category: 'womens',
     tags: ['Dress', 'Summer', 'New Arrival'],
@@ -147,12 +133,10 @@ export const products: Product[] = [
   {
     id: '8',
     name: 'High-Waisted Jeans',
-    price: 69.99,
-    originalPrice: 89.99,
-    discount: 22,
+    price: 599,
     images: [
-      'https://images.pexels.com/photos/5698859/pexels-photo-5698859.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      'https://images.pexels.com/photos/5698858/pexels-photo-5698858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+      '/photo 14.jpg',
+      '/photo15.jpg'
     ],
     category: 'womens',
     tags: ['Jeans', 'Casual', 'Best Seller'],
@@ -163,12 +147,10 @@ export const products: Product[] = [
   {
     id: '9',
     name: 'Cashmere Cardigan',
-    price: 119.99,
-    originalPrice: 149.99,
-    discount: 20,
+    price: 599,
     images: [
-      'https://images.pexels.com/photos/4210866/pexels-photo-4210866.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      'https://images.pexels.com/photos/4210863/pexels-photo-4210863.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+      '/photo16.jpg',
+      '/photo17.jpg'
     ],
     category: 'womens',
     tags: ['Cardigan', 'Winter', 'Premium'],
@@ -179,12 +161,10 @@ export const products: Product[] = [
   {
     id: '10',
     name: 'Silk Blouse',
-    price: 89.99,
-    originalPrice: 109.99,
-    discount: 18,
+    price: 599,
     images: [
-      'https://images.pexels.com/photos/844867/pexels-photo-844867.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      'https://images.pexels.com/photos/1173651/pexels-photo-1173651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+      '/photo18.jpg',
+      '/photo19.jpg'
     ],
     category: 'womens',
     tags: ['Blouse', 'Formal', 'Premium'],
@@ -195,12 +175,10 @@ export const products: Product[] = [
   {
     id: '11',
     name: 'Pleated Midi Skirt',
-    price: 59.99,
-    originalPrice: 79.99,
-    discount: 25,
+    price: 599,
     images: [
-      'https://images.pexels.com/photos/5885840/pexels-photo-5885840.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      'https://images.pexels.com/photos/6311662/pexels-photo-6311662.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+      '/photo20.jpg',
+      '/photo21.jpg'
     ],
     category: 'womens',
     tags: ['Skirt', 'Formal', 'Best Seller'],
@@ -211,12 +189,10 @@ export const products: Product[] = [
   {
     id: '12',
     name: 'Leather Ankle Boots',
-    price: 149.99,
-    originalPrice: 189.99,
-    discount: 21,
+    price: 599,
     images: [
-      'https://images.pexels.com/photos/7691086/pexels-photo-7691086.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      'https://images.pexels.com/photos/7691249/pexels-photo-7691249.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+      '/photo22.jpg',
+      '/photo11.jpg'
     ],
     category: 'womens',
     tags: ['Boots', 'Leather', 'Winter'],
