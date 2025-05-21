@@ -1,33 +1,30 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { categories } from '../../data/products';
 
 const CategorySection: React.FC = () => {
+  const navigate = useNavigate();
+
   return (
-    <section className="py-16 bg-white">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Shop by Category</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            Explore our collections and find your perfect style.
-          </p>
-        </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <section className="py-8 bg-white">
+      <div className="px-4">
+        <h2 className="text-2xl font-bold mb-6">Featured Categories</h2>
+        <div className="grid grid-cols-2 gap-4">
           {categories.map((category) => (
-            <a 
+            <button 
               key={category.id} 
-              href={`/products?category=${category.slug}`}
-              className="group block relative overflow-hidden rounded-lg aspect-[3/4]"
+              onClick={() => navigate(`/${category.slug}`)}
+              className="group block relative overflow-hidden rounded-lg aspect-[3/4] w-full text-left"
             >
               <img 
                 src={category.image} 
                 alt={category.name} 
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
-                <h3 className="text-white text-xl font-semibold">{category.name}</h3>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
+                <h3 className="text-white text-lg font-semibold">{category.name}</h3>
               </div>
-            </a>
+            </button>
           ))}
         </div>
       </div>

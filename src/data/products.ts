@@ -3,27 +3,27 @@ import { Product, Category } from '../types';
 export const categories: Category[] = [
   {
     id: '1',
-    name: 'T-Shirts',
-    image: 'https://images.pexels.com/photos/9594952/pexels-photo-9594952.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    slug: 'tshirts'
+    name: 'Mens',
+    image: 'https://images.pexels.com/photos/7691086/pexels-photo-7691086.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    slug: 'mens'
   },
   {
     id: '2',
-    name: 'Hoodies',
+    name: 'Womens',
     image: 'https://images.pexels.com/photos/7691166/pexels-photo-7691166.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    slug: 'hoodies'
+    slug: 'womens'
   },
   {
     id: '3',
-    name: 'Pants',
-    image: 'https://images.pexels.com/photos/52518/jeans-pants-blue-shop-52518.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    slug: 'pants'
+    name: 'Bestsellers',
+    image: 'https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    slug: 'bestsellers'
   },
   {
     id: '4',
-    name: 'Accessories',
-    image: 'https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    slug: 'accessories'
+    name: 'New Arrivals',
+    image: 'https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    slug: 'new-arrivals'
   },
 ];
 
