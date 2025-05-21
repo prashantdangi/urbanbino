@@ -71,12 +71,8 @@ const HomePage: React.FC = () => {
               </div>
               <h3 className="font-medium text-sm">{product.name}</h3>
               <div className="flex items-center space-x-2">
-                <span className="font-semibold">${product.price}</span>
-                {product.originalPrice && (
-                  <span className="text-gray-500 line-through text-sm">
-                    ${product.originalPrice}
-                  </span>
-                )}
+                <span className="font-semibold">₹{product.price}</span>
+                <span className="text-gray-500 line-through text-sm">₹999</span>
               </div>
             </div>
           ))}

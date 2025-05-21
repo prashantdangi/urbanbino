@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { getProductById, getProductsByCategory } from '../data/products';
 import Button from '../components/ui/Button';
@@ -13,6 +13,11 @@ const ProductDetailPage = () => {
 
   const product = id ? getProductById(id) : null;
   const relatedProducts = product ? getProductsByCategory(product.category) : [];
+
+  // Add scroll to top effect
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [id]);
 
   if (!product) {
     return (
@@ -60,11 +65,9 @@ const ProductDetailPage = () => {
           <div>
             <h1 className="text-2xl font-bold">{product.name}</h1>
             <div className="flex items-center space-x-2 mt-2">
-              <span className="text-xl font-semibold">${product.price}</span>
+              <span className="text-xl font-semibold">₹{product.price}</span>
               {product.originalPrice && (
-                <span className="text-gray-500 line-through">
-                  ${product.originalPrice}
-                </span>
+                <span className="text-gray-500 line-through">₹999</span>
               )}
             </div>
           </div>
@@ -135,14 +138,8 @@ const ProductDetailPage = () => {
                   </div>
                   <h3 className="font-medium text-sm">{relatedProduct.name}</h3>
                   <div className="flex items-center space-x-2">
-                    <span className="font-semibold">
-                      ${relatedProduct.price}
-                    </span>
-                    {relatedProduct.originalPrice && (
-                      <span className="text-gray-500 line-through text-sm">
-                        ${relatedProduct.originalPrice}
-                      </span>
-                    )}
+                    <span className="font-semibold">₹{relatedProduct.price}</span>
+                    <span className="text-gray-500 line-through text-sm">₹999</span>
                   </div>
                 </div>
               ))}
