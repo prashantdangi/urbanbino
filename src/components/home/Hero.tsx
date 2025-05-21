@@ -1,7 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Button from '../ui/Button';
 
 const Hero: React.FC = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="relative h-screen bg-gray-100">
       <div className="absolute inset-0 overflow-hidden">
@@ -15,22 +18,24 @@ const Hero: React.FC = () => {
       
       <div className="relative z-10 container mx-auto px-4 h-full flex flex-col justify-center items-start">
         <div className="max-w-xl">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">Elevate Your Style Game</h1>
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">"Wear the vibe. Be the Trend."</h1>
           <p className="text-xl text-white mb-8">
-            Discover the latest trends in streetwear for the modern urban lifestyle.
+            Urban Bino - Where comfort meets bold street style.
           </p>
           <div className="flex flex-wrap gap-4">
             <Button 
               variant="primary" 
               size="lg" 
-              className="bg-white text-black hover:bg-gray-200"
+              className="bg-black text-white hover:bg-gray-800"
+              onClick={() => navigate('/new-arrivals')}
             >
               Shop New Arrivals
             </Button>
             <Button 
               variant="outline" 
               size="lg" 
-              className="border-white text-white hover:bg-white hover:text-black"
+              className="border-white text-white hover:bg-white hover:text-black !important"
+              onClick={() => navigate('/mens')}
             >
               Explore Collection
             </Button>

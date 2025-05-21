@@ -4,9 +4,13 @@ import Layout from '../components/layout/Layout';
 import ProductGrid from '../components/products/ProductGrid';
 import { Filter, SlidersHorizontal, X } from 'lucide-react';
 
-const ProductsPage: React.FC = () => {
+interface ProductsPageProps {
+  category?: string;
+}
+
+const ProductsPage: React.FC<ProductsPageProps> = ({ category }) => {
   const [filterOpen, setFilterOpen] = useState(false);
-  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
+  const [selectedCategories, setSelectedCategories] = useState<string[]>(category ? [category] : []);
   const [selectedSizes, setSelectedSizes] = useState<string[]>([]);
   const [sortBy, setSortBy] = useState('featured');
   
@@ -31,6 +35,11 @@ const ProductsPage: React.FC = () => {
   
   // Filter products
   const filteredProducts = products.filter(product => {
+    // If category prop is provided, filter by it first
+    if (category && product.category !== category) {
+      return false;
+    }
+    
     // If no categories are selected, show all products
     if (selectedCategories.length === 0 && selectedSizes.length === 0) {
       return true;

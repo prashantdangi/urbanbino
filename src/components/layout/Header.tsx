@@ -27,23 +27,30 @@ const Header: React.FC = () => {
   
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'
+      isScrolled ? 'bg-white shadow-md py-1' : 'bg-transparent py-2'
     }`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="text-2xl md:text-3xl font-bold">
-            <a href="/" className="text-black">SNITCH</a>
+          <div className="flex items-center space-x-2">
+            <a href="/" className="flex items-center space-x-2">
+              <img 
+                src="/logo.png" 
+                alt="Urban Bino Logo" 
+                className="h-10 w-10 md:h-14 md:w-14"
+              />
+              <span className="text-xl md:text-2xl font-bold text-black -mt-1">Urban Bino</span>
+            </a>
           </div>
           
           {/* Desktop Navigation */}
           <nav className="hidden md:block">
             <ul className="flex space-x-8">
               <li><a href="/" className="text-black hover:text-gray-600 transition-colors">Home</a></li>
-              <li><a href="/products" className="text-black hover:text-gray-600 transition-colors">New Arrivals</a></li>
-              <li><a href="/products" className="text-black hover:text-gray-600 transition-colors">Bestsellers</a></li>
-              <li><a href="/products" className="text-black hover:text-gray-600 transition-colors">Collections</a></li>
-              <li><a href="/products" className="text-black hover:text-gray-600 transition-colors">Sale</a></li>
+              <li><a href="/mens" className="text-black hover:text-gray-600 transition-colors">Mens</a></li>
+              <li><a href="/womens" className="text-black hover:text-gray-600 transition-colors">Womens</a></li>
+              <li><a href="/new-arrivals" className="text-black hover:text-gray-600 transition-colors">New Arrivals</a></li>
+              <li><a href="/bestsellers" className="text-black hover:text-gray-600 transition-colors">Bestsellers</a></li>
             </ul>
           </nav>
           
