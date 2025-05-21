@@ -4,25 +4,25 @@ export const categories: Category[] = [
   {
     id: '1',
     name: 'Mens',
-    image: 'https://images.pexels.com/photos/7691086/pexels-photo-7691086.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: '/photo6.jpg',
     slug: 'mens'
   },
   {
     id: '2',
     name: 'Womens',
-    image: 'https://images.pexels.com/photos/7691166/pexels-photo-7691166.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: '/photo5.jpg',
     slug: 'womens'
   },
   {
     id: '3',
     name: 'Bestsellers',
-    image: 'https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: '/photo7.jpg',
     slug: 'bestsellers'
   },
   {
     id: '4',
     name: 'New Arrivals',
-    image: 'https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: '/photo8.jpg',
     slug: 'new-arrivals'
   },
 ];

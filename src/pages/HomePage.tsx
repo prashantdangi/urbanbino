@@ -4,10 +4,10 @@ import { products } from '../data/products';
 import CategorySection from '../components/home/CategorySection';
 
 const coverImages = [
-  'https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-  'https://images.pexels.com/photos/5698851/pexels-photo-5698851.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-  'https://images.pexels.com/photos/4210866/pexels-photo-4210866.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-  'https://images.pexels.com/photos/5885840/pexels-photo-5885840.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+  '/photo1.jpg',
+  '/photo2.jpg',
+  '/photo3.jpg',
+  '/photo4.jpg'
 ];
 
 const HomePage: React.FC = () => {
